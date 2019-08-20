@@ -26,6 +26,7 @@ public class MyService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Toast.makeText(this, "Services Started ", Toast.LENGTH_SHORT).show();
         myPlayer.start();
+
         return super.onStartCommand(intent, flags, startId);
 
     }

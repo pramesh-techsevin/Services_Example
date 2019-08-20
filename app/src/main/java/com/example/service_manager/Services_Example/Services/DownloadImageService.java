@@ -1,13 +1,14 @@
-package com.example.service_manager;
+package com.example.service_manager.Services_Example.Services;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 
-public class Services extends Service {
+public class DownloadImageService extends Service {
     @Nullable
     @Override
+
     public IBinder onBind(Intent intent) {
         return null;
     }
@@ -22,10 +23,8 @@ public class Services extends Service {
         return super.onStartCommand(intent, flags, startId);
     }
 
-
-
     @Override
-    public void onDestroy() {
+    public void onDestroy(){
         super.onDestroy();
     }
 }
